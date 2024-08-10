@@ -1,0 +1,15 @@
+To start:
+
+docker build -t my_postgres_image .
+
+To Run:
+
+docker run -v -d \                 
+  --name my_postgres_container \
+  -p 5432:5432 \
+  my_postgres_image
+
+To remove:
+
+docker stop my_postgres_container
+docker rm my_postgres_container 
